@@ -1,6 +1,6 @@
-# **Network Diagnostic**
+# **Network Diagnostic Tool**
 
-Network Diagnostic tool is a simple interface that as the vocation to display generic network informations - Network Diag also works on remote machine as long as they are reachable through the network.
+Network Diagnostic tool is a simple interface that as the vocation to display generic network informations - Network Diagnostic Tool also works on remote machine as long as they are reachable through your network.
 
 ![image]()
 
@@ -19,28 +19,11 @@ Still a work in progress
 
 ##  **1. How To Launch** 
 
-To install AD-Displayer just double click on the .exe file. As simple as that.
+To use Network Diagnostic Tool right click on it and launch it as administrator - some commands require admin rights. 
 
 ## **2. How To Use** 
 
-Each button have a specific interaction with the textboxe. Let see how each button work. 👇 
-
-#### 1. **INFOS Button** 
-
-- The first textbox is used for user ID, as follow: **Alias** or **Firstname Lastname** (order is important)
-- The second text is used for PC ID, as follow: **AD computer's name**
-
-Then click on INFOS button and the result should be displayed in the third textbox (the big one).
-
-#### 2. **AD Groups Button**
-
-Here, only the first textbox is used. Simply type the computer name or user ID (*alias* or *firstname lastname*) and then press AD groups.
-
-#### 3. **Compare Button**
-
-For this one, the two textboxes are used and it will compare the first entry (typed into 1.) to the second entry (typed into 2.) and then it will compare AD groups that the first entry have that the second one do not have (order is important here) and will display the result.
-
-That's it ! Pretty simple. 😉 
+First make sure that WinRM protocol is authorized on your network.  
 
 ## **3. What/How To Edit**
 
