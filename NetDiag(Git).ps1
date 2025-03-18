@@ -1,21 +1,34 @@
 Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
 
 # Créer le formulaire
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Network Diag"
-$form.Width = 600
-$form.Height = 700
+$form.Text = "Network Diag Tool"
+$form.Width = 500
+$form.Height = 600
+
+$form.Add_KeyDown({
+    param($sender, $e)
+    if ($e.KeyCode -eq [System.Windows.Forms.Keys]::Enter) {
+        $button.PerformClick()  # Simule le clic sur le bouton
+    }
+
+})
+
+$form.KeyPreview = $true
 
 $textBoxComputer = New-Object System.Windows.Forms.TextBox
+$textBoxComputer.Multiline = $true
 $textBoxComputer.Width = 100
 $textBoxComputer.Height = 20
 $textBoxComputer.Location = New-Object System.Drawing.Point(20, 20)
+$form.Controls.Add($textBoxComputer)
 
 # Créer une TextBox pour afficher les résultats
 $textBox = New-Object System.Windows.Forms.TextBox
 $textBox.Multiline = $true
-$textBox.Width = 550
-$textBox.Height = 580
+$textBox.Width = 450
+$textBox.Height = 480
 $textBox.Location = New-Object System.Drawing.Point(20, 50)
 $textBox.ScrollBars = 'Vertical'
 
@@ -23,7 +36,7 @@ $textBox.ScrollBars = 'Vertical'
 $button = New-Object System.Windows.Forms.Button
 $button.Text = "Start"
 $button.Width = 70
-$button.Height = 22
+$button.Height = 20
 $button.Location = New-Object System.Drawing.Point(130, 19)
 
 # Ajouter un gestionnaire d'événement au clic du bouton
@@ -91,7 +104,7 @@ $button.Add_Click({
 
 # Ajouter le bouton et la TextBox au formulaire
 $form.Controls.Add($textBox)
-$form.Controls.Add($textBoxComputer)
+
 $form.Controls.Add($button)
 $textBox.Anchor = [System.Windows.Forms.AnchorStyles]::Top -bor [System.Windows.Forms.AnchorStyles]::Bottom -bor [System.Windows.Forms.AnchorStyles]::Left -bor [System.Windows.Forms.AnchorStyles]::Right
 
