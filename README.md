@@ -6,7 +6,7 @@ Network Diagnostic Tool is a simple interface that as the vocation to display ge
 
 ## Status
 
-Done ✅
+Work in progress
 
 ## Features/To Do
 
