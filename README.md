@@ -2,7 +2,7 @@
 
 Network Diagnostic Tool is a simple interface that as the vocation to display generic network informations - Network Diagnostic Tool also works on remote machine as long as they are reachable through your network.
 
-![image](https://github.com/user-attachments/assets/12ba8600-3c88-40cb-896e-80a4cbbebc2d)
+![image](https://github.com/user-attachments/assets/7bb3251b-138f-4400-8b7c-f70e6e98f530)
 
 ## Status
 
