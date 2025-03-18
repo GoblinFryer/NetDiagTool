@@ -22,13 +22,13 @@ To use Network Diagnostic Tool right click on it and launch it as **administrato
 
 ## **2. How To Use**
 
-First make sure that WinRM protocol is authorized on your network. Secondly, download the NetDiagTool.exe (here). Then, right-click on it, launch it with administrator rights. Once the window's open enter the nodename you want the diagnostic to run on in the textbox and press "start" - It might take some time to display the results depending on your network capabilities.
+First make sure that **WinRM protocol is authorized** on your network. Secondly, download the NetDiagTool.exe (here). Then, right-click on it, launch it with **administrator rights**. Once the window's open enter the nodename you want the diagnostic to run on in the textbox and press "start" - It might take some time to display the results depending on your network capabilities.
 
 /!\ Make sure to read section 3
 
 ## **3. What/How To Edit**
 
-For the script to run properly you have some modifications to do. Open the .ps1 file and search the following words : "YouOwnInternalServerToTest" and "YourDomain" and replace them by your needed equivalent - the executable is not formated wich will make some informations not to be displayed. [^1]
+For the script to run properly you have some modifications to do. Open the .ps1 file and search the following words : **"YouOwnInternalServerToTest"** and **"YourDomain"** and replace them by your needed equivalent - the executable is not formated wich will make some informations not to be displayed. [^1]
 
 [^1]: I'm working on a way to retrieve informations needed for the .exe to be directly usable
 
