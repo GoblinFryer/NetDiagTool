@@ -6,7 +6,7 @@ Network Diagnostic Tool is a simple interface that as the vocation to display ge
 
 ## Status
 
-Still a work in progress and almost done
+Done ✅
 
 ## Features/To Do
 
@@ -15,8 +15,7 @@ Still a work in progress and almost done
 -  Physical network interface informations ✅ 
 -  TraceRT ✅
 -  NSLookUp ✅
--  Save/save as functionnalities 🔨
--  Improving ergonomy/UI 🔨
+-  Improving ergonomy/UI ✅
 
 ##  **1. How To Launch** 
 
