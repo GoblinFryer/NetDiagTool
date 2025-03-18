@@ -30,5 +30,5 @@ First make sure that WinRM protocol is authorized on your network. Secondly, dow
 
 For the script to run properly you have some modifications to do. Open the .ps1 file and search the following words : "YouOwnInternalServerToTest" and "YourDomain" and replace them by your needed equivalent - the executable is not formated which will make some informations not to be displayed. [^1]
 
-[^1]: I'm working on a way to retrieve informations needed for the .exe to be drectly usable
+[^1]: I'm working on a way to retrieve informations needed for the .exe to be directly usable
 
