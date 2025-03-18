@@ -2,11 +2,9 @@
 
 Network Diagnostic tool is a simple interface that as the vocation to display generic network informations - Network Diagnostic Tool also works on remote machine as long as they are reachable through your network.
 
-![image]()
-
 ## Status
 
-Still a work in progress
+Still a work in progress and almost done
 
 ## Features/To Do
 
@@ -15,7 +13,8 @@ Still a work in progress
 -  Physical network interface informations ✅ 
 -  TraceRT ✅
 -  NSLookUp ✅
--  Improving ergonomy 
+-  Save/save as functionnalities 🔨
+-  Improving ergonomy/UI 🔨
 
 ##  **1. How To Launch** 
 
@@ -23,37 +22,13 @@ To use Network Diagnostic Tool right click on it and launch it as administrator 
 
 ## **2. How To Use** 
 
-First make sure that WinRM protocol is authorized on your network.  
+First make sure that WinRM protocol is authorized on your network. Secondly, download the NetDiagTool.exe (here). Then, right-click on it, launch it with administrator rights. Once the window's open enter the nodename you want the diagnostic to run on in the textbox and press "start" - It might take some time to display the results depending on your network capabilities.
+
+/!\ Make sure to read scetion 3
 
 ## **3. What/How To Edit**
 
-You have the possibility to modify what the script can display pretty easily. Here's what you can modify: [^3]
+For the script to run properly you have some modifications to do. Open the .ps1 file and search the following words : "YouOwnInternalServerToTest" and "YourDomain" and replace them by your needed equivalent - the executable is not formated which will make some informations not to be displayed. [^1]
 
-- User's AD informations
-- Search suggestions
+[^1]: I'm working on a way to retrieve informations needed for the .exe to be drectly usable
 
-#### 1. **User AD informations**
-
-To modify this parameter just look for the following line (in the *$infos.add_click block*):
-
- ` $properties = "displayed","properties" and $PCproperties = "displayed","properties" `
-
-Here, specify what parameters you want to see - you can use the following command in PowerShell to look at all available parameters ` 'Get-ADUser -Identity "username" -Properties * ` .
-
-Then, just assigned those parameters to *$properties*.
-
-` example: $properties = "AccountExpirationDate","created" `
-
-#### 2. **Search Suggestions**
-
-Just look for the following lines (in #TEXTBOX1 and #TEXTBOX2):
-
-` $ou ='OU=,OU=,DC=,DC=,DC=' `
-
-You just need to specify Domain Controller (DC) and Organizational Unit (OU).
-
-` example: $ou = 'OU=computers,OU=city,DC=my','DC=domain' `
-
-[^1]: It tries to
-[^2]: the application might not work properly on your environment do not hesitate to modify the source code
-[^3]: You can modify all the script but those are the most easily configurable parameters
