@@ -18,13 +18,13 @@ Still a work in progress and almost done
 
 ##  **1. How To Launch** 
 
-To use Network Diagnostic Tool right click on it and launch it as administrator - some commands require admin rights. 
+To use Network Diagnostic Tool right click on it and launch it as **administrator** - some commands require admin rights. 
 
-## **2. How To Use** 
+## **2. How To Use**
 
 First make sure that WinRM protocol is authorized on your network. Secondly, download the NetDiagTool.exe (here). Then, right-click on it, launch it with administrator rights. Once the window's open enter the nodename you want the diagnostic to run on in the textbox and press "start" - It might take some time to display the results depending on your network capabilities.
 
-/!\ Make sure to read scetion 3
+/!\ Make sure to read section 3
 
 ## **3. What/How To Edit**
 
